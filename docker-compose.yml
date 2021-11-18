@@ -1,0 +1,16 @@
+version: '3'
+services:
+    web:
+        image: develpudu/linphone-docker
+        container_name: linphone
+        environment:
+            - "DISPLAY"
+            - QT_QUICK_BACKEND="software"
+            - Qt5_DIR="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/cmake"
+            - PATH='/usr/lib/x86_64-linux-gnu/qt5/bin':$PATH
+        volumes:
+            - "./hosts:/etc/hosts"
+            - "/tmp/.X11-unix:/tmp/.X11-unix"
+            - "/run/user/1000/gdm/Xauthority:/run/user/1000/gdm/Xauthority:rw"
+            - "/run/user/1000/pulse:/run/user/1000/pulse"
+        restart: always
