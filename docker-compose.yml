@@ -7,7 +7,7 @@ services:
             - "DISPLAY"
             - QT_QUICK_BACKEND="software"
             - Qt5_DIR="/usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/data/cmake"
-            - PATH='/usr/lib/x86_64-linux-gnu/qt5/bin':$PATH
+            - PATH="/usr/lib/x86_64-linux-gnu/qt5/bin"
         volumes:
             - "./hosts:/etc/hosts"
             - "/tmp/.X11-unix:/tmp/.X11-unix"
