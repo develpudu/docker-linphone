@@ -51,6 +51,9 @@ $ sudo docker exec linphone /bin/bash -c 'linphonecsh generic terminate'
 ```
 ### Info
 Adapted from [here](https://github.com/szengerle/linphone-docker)
+
 Adapted from [here](https://github.com/phillin77/docker-linphone)
+
 Adapted from [here](https://github.com/dwilkie/linphone-docker)
+
 Adapted from [here](https://github.com/rjohnsondev/linphone-docker)
